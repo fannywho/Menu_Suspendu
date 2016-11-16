@@ -1,101 +1,108 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Menu Suspendu</title>
+    <title>Le Carrousel</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-	<div class="main">
-		<header>
-			<nav>
-				<ul>
-					<li><a href="#">Menu 1</a></li>
-					<li><a href="#">Menu 2</a></li>
-					<li><a href="#">Menu 3</a></li>
-					<li><a href="#">Menu 4</a></li>
-					<li><a href="#">Devenir chef</a></li>
-				</ul>
-			</nav>
-			<section class="carousel">
-				<ul>
-					<li><img src="#"></li>
-					<li><img src="#"></li>
-					<li><img src="#"></li>
-					<span class="prev"><</span>
-            		<span class="next">></span>
-            		<!-- HUGO : Ajouter marques du bas si besoin (voir maquette) -->
-				</ul>
-				<article>
-					<img src="#" id="logo">
-					<p>Venez découvrir le délice d'une cuisine raffinée tout en aidant les autres .</p>
-					<span class="bouton">Réserver.</span>
-				</article>
-			</section>
-		</header>
-		
-		<section id="content">
-			<article class="article1"> 
-				<img src="#">
-				<p>Le but de notre établissement est de proposer une cuisine goûteuse ainsi qu'un menu gratuit aux personnes dans le besoin grâce à votre générosité et celle de nos bénévoles. 
-				Le principe est celui du "menu suspendu": dans le prix de notre menu unique est compris celui d'un second menu, le menu suspendu. Lorsque vous venez manger chez nous vous offrez ainsi un repas à une personne défavorisée.
-				Tous les plats sont réalisé par des bénévoles sous les ordre de grands Chefs.
+    <div id="main">
+        <header>
+            <!--Navigation-->
+            <nav class="clearfix">
+                <ul>
+                    <li><a href="#">Concept</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Nos chefs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cuisinier</a></li>
+                </ul>
+            </nav>
+            <!--Logo-->
+            <h1><img src="img-layout/logo.jpg" alt="Le Carrousel"></h1>
+            <!--Phrase d'accroche-->
+            <h2>Venez découvrir le délice<br>d'une cuisine raffinée<br>tout en aidant ceux en difficulté.</h2>
+            <!--Big lien-->
+            <a href="#" class="bt">réservez</a>
+        </header>
+        <!--Section Concept-->
+        <section class="concept">
+            <article class="clearfix">
+                <img src="image-layout/concept.jpg" alt="Concept">
+                <p>Le but de notre établissement est de proposer
+                    <br>une cuisine goûteuse ainsi qu'un menu
+                    <br>gratuit aux personnes dans le besoin
+                    <br>grâce à votre générosité et celle de nos bénévoles.
+                    <a href="#">Cliquez pour en savoir plus...</a>
+                </p>
+                <a href="#"><span class="flecheDroite"></span></a>
+            </article>
+        </section>
+        <section class="menu">
+            <article class="clearfix">
+                <img src="image-layout/menu.jpg" alt="Menu">
+                <p>Nous vous proposons des menus de saison préparés par
+                    <br>des grands Chefs de la gastronomie française
+                    <br>spéialement pour Menu Suspendu. A chaque saison
+                    <br>son menu composés de produits actuels et goûteux
+                    <a href="#">Cliquez pour découvrir notre menu actuel...</a>
+                </p>
+                <a href="#"><span class="flecheGauche"></span></a>
+            </article>
+        </section>
+        <div id="commentaire">
+           <blockquote class="prems">C'était super bon comme d'habitude.<br> Hâte d'être en été pour le menu<br> spécial kébab !</blockquote> 
+           <blockquote class="scd">Excusez-moi garçon, pourrais-je<br> avoir une caraffe d'eau et une corbeille<br> de pain s'il vous plait ?</blockquote>
+           <div></div>
 
-				Nos partenaires: Les Restos du Coeur, Secours Populaire et La Marie de Paris</p>
-			</article>
-			<div id="compteur">
-				<div class="counter">42</div>
-				<div class="counter">42</div>
-				<div class="counter">42</div>
-			</div>
-			
-			<article class="article2">
-				<span class="avant"><</span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos in optio atque, itaque dolorem molestiae quisquam placeat id tenetur ratione nesciunt delectus quia dicta error. Reiciendis quas at corrupti id.</p>
-				<img src="#">
-			</article>
-			<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellat reprehenderit repellendus, si</blockquote>
-			<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid repellat reprehenderit repellendus, si</blockquote>
-			<article class="article1" id="chef">
-				<img src="#">
-				<p>Charlotte Homes sera votre Chef pour toute la saison.
+           <img class="ho" src="image-layout/guillemet1.jpg"/> <img class="hi" src="image-layout/guillemet2.jpg"/>
+           <img class="ha" src="image-layout/guillemet1.jpg"/> <img class="hic" src="image-layout/guillemet2.jpg"/>
+        </div>
+        <section class="chef">
+            <article class="clearfix">
+                <img src="image-layout/chef.jpg" alt="Chef">
+                <p>Charlotte Homes est une passionnée autodidacte qui a rejoint
+                    <br>la brigade du chef cuisinier Alain Passard en 2000. En 2002,
+                    <br>elle intègre la pâtisserie de Pierre Hermé et en 2005,
+                    <br>elle ouvre son propre restaurant gastronomique à Paris.
+                    <a href="#">Le menu de la saison est d'ailleurs extrait de sa carte.</a>
+                </p>
+                <a href="#"><span class="flecheDroite"></span></a>
+            </article>
+            <a href="#" class="bt">réservez</a>
+        </section>
 
-				Charlotte Homes est une passionnée autodidacte, elle rejoint la brigade du chef cuisinier Alain Passard à L'Arpège à Paris en 2000, puis en 2002 elle intègre la pâtisserie de Pierre Hermé et devient sous-chef en pâtisserie. En 2005, elle ouvre son propre  restaurant gastronomique à Paris. Le menu de la saison est d'ailleurs extrait de sa carte.
+        <footer>
+            <div class="bloc1">
+            <article class="fournisseurs">
+                <h2>INFOS  PRATIQUES</h2>
+                <p>Nous choisissons les fournisseurs qui partagent nos valeur,<br>telles que notre amour du goût, notre passion de découvrir<br>et notre volonté de partage.<br>Notre restaurant s'engage à servir à tous es clients<br>des produits frais et de saison</p>
+                </article>
+                <article class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2624.81946501885!2d2.2877957156101156!3d48.861652908431125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1479143627076" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </article>
+            </div>
 
-				Aujourd'hui Charlotte s'anime à vouloir donner accès à la gastronomie aux plus démunis.</p>
-				<span class="arriere">></span>
-				<div class="devenirchef">
-					<p>Dans une ambiance convivial vous 	serez placé sous les ordres du Chef cuisinier du moment. 
-					Vous serez en charge de tous types de travaux en cuisine: mise en place, réception et rangement des provisions, préparer les repas, préparer les garnitures, etc...
-
-					Vous êtes professionel de la restauration et souhaitez donner de votre temps pour offrir un repas exceptionnel aux plus démunis ?</p>
-					<span class="bouton">Formulaire</span>
-					<!-- CHECKER AVEC MAQUETTE POUR VOIR LA CLASSE -->
-				</div>
-			</article>
-			<span class="bouton">Réservez</span>
-			<!-- CHECKER AVEC MAQUETTE POUR VOIR LA CLASSE -->		
-		</section>
-		<footer>
-			<div class="bloc1">
-				<article class="fournisseurs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quis similique culpa. Similique quidem voluptatem nulla facilis recusandae, voluptatibus laborum soluta unde ducimus magni, molestias amet, in assumenda placeat commodi.</article>
-				<article class="map"></article>
-			</div>
-			<div class="footer">
-				<ul class="nav">
-					<li><a href="#">Menu 1</a></li>
-					<li><a href="#">Menu 2</a></li>
-					<li><a href="#">Menu 3</a></li>
-					<li><a href="#">Menu 4</a></li>
-				</ul>
-				<ul class="social">
-					<li><img src="#"></li>
-					<li><img src="#"></li>
-					<li><img src="#"></li>
-				</ul>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ducimus eveniet sequi eaque esse commodi similique quaerat alias hic voluptatibus</p>
-			</div>
-		</footer>
-	</div>
+            <div class="footer">
+                <ul class="nav">
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                </ul>
+                <ul class="social">
+                    <li><img src="#"></li>
+                    <li><img src="#"></li>
+                    <li><img src="#"></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ducimus eveniet sequi eaque esse commodi similique quaerat alias hic voluptatibus</p>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
