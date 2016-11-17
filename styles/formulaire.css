@@ -1,0 +1,30 @@
+form[name="testForm"] {
+  padding: 20px;
+
+}
+  
+  h1 {
+    padding: 16px;
+    margin-left: 200px;
+  }
+  
+  label {
+    display: block;
+    -bottom: 20px;
+  }
+
+  input {
+    width: 500px;
+  }
+
+  
+  button {
+    margin-top: 10px;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px;
+    background: #636363;
+    border: none;
+  }
+}

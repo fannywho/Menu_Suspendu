@@ -1,0 +1,178 @@
+@charset="utf-8";
+
+
+#menu42, #menuSuspendu {
+	font-family: Vollkorn, sans-serif;
+	color: #000;
+	font-size: 16px;
+}
+
+
+.entree42, .plat42, .dessert42 {
+	display: table-cell;
+	width: 30%;
+	line-height: 2;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+img {
+	height: auto;
+}
+
+/* ------ ENTREES ------*/
+
+img#entree1{
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+img#entree2, img#entree3 {
+	display: none;
+}
+
+.entree42 ul {
+	position: relative;
+	padding-top: 240px;
+	list-style-type: none;
+}
+
+li#lieu:hover img#entree1{
+	display: block;
+	position: absolute;
+	top: 10px;
+}
+
+li#bar:hover img#entree2{
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	height: 200px;
+}
+li#jacques:hover img#entree3{
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+
+
+/* --------¨PLATS ------- */
+
+img#plat1{
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+img#plat2, img#plat3 {
+	display: none;
+}
+
+.plat42 ul {
+	position: relative;
+	padding-top: 240px;
+	list-style-type: none;
+}
+
+li#bresse:hover img#plat1{
+	display: block;
+	position: absolute;
+	top: 10px;
+}
+
+li#poulpe:hover img#plat2{
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	height: 200px;
+}
+li#filet:hover img#plat3{
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+/*---- DESSERT --------- */
+
+img#dessert1{
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+img#dessert2, img#dessert3 {
+	display: none;
+}
+
+.dessert42 ul {
+	list-style-type: none;
+	position: relative;
+	padding-top: 240px;
+}
+
+li#paris:hover img#dessert1{
+	display: block;
+	position: absolute;
+	top: 10px;
+}
+
+li#citron:hover img#dessert2{
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	height: 200px;
+}
+li#fruit:hover img#dessert3{
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+/* ----- menu suspendu ------- */
+
+#menuSuspendu {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	line-height: 2;
+}
+
+#menuSuspendu ul {
+	list-style-type: none;
+}
+
+
+#menuSuspendu article img {
+	width: 200px;
+	height: 200px;
+}
+
+#menuSuspendu article img#milieu {
+	margin: 0 100px;
+}
+
+ul.suspendu {
+	width: 250px;
+	text-align: left;
+	clear: both;
+	margin: 0 auto;
+}

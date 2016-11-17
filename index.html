@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Le Carousel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <!--Burger menu pour la version mobile-->
+            <div id="mobilemenu" class="navscroll">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNavburger()"><img src="img_layout/croix.png" /></a>
+                <h2>LE CAROUSEL</h2>
+                <ul>
+                    <li><a onclick="closeNavburger()" class="js-scrollTo" href="#section1" href="javascript:void(0)">Concept<span>&#62;</span></a></li>
+                    <li><a onclick="closeNavburger()" class="js-scrollTo" href="#section2" href="javascript:void(0)">Menu<span>&#62;</span></a></li>
+                    <li><a onclick="closeNavburger()" class="js-scrollTo" href="#section3" href="javascript:void(0)">Nos Chef<span>&#62;</span></a></li>
+                    <li><a onclick="closeNavburger()" class="js-scrollTo" href="#" href="javascript:void(0)">Devenir cuisinier<span>&#62;</span></a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href="#"><img src="img_layout/iconfacebook.png"></a></li>
+                    <li><a href="#"><img src="img_layout/icontwitter.png"></a></li>
+                    <li><a href="#"><img src="img_layout/iconinstagram.png"></a></li>
+                </ul>
+            </div>
+            <span id="burgermenu" onclick="openNavburger()">&#9776;</span>
+             <!--Fin burger menu-->
+
+             <!-- Navigation version desktop -->
+            <nav class="clearfix">
+                <ul>
+                    <li><a href="#section1" class="js-scrollTo">Concept</a></li>
+                    <li><a href="#section2" class="js-scrollTo">Menu</a></li>
+                    <li><a href="#section3" class="js-scrollTo">Nos chefs</a></li>
+                    <li><a href="mailto: contact@lecarousel.fr">Contact</a></li>
+                    <li><a href="formulaire.html" target="_blank">Devenir cuisinier</a></li>
+                </ul>
+            </nav>
+            <!-- Fin navigation -->
+            <!-- Carousel -->
+            <div id="carouselhead">
+                <ul id="sContent">
+                    <li class="mySlides fade"><img src="img_layout/parallax1.png"></li><!--
+                    --><li class="mySlides fade"><img src="img_layout/parallax2.png"></li><!--
+                    --><li class="mySlides fade"><img src="img_layout/parallax3.png"></li>
+                </ul>
+            </div>
+            <!--Fin carousel -->
+            <!-- Header version mobile-->
+            <div id="headmobile">
+            	<div><img src="img_layout/parallax1.png"></div>
+                <div><img src="img_layout/parallax2.png"></div>
+                <div><img src="img_layout/parallax3.png"></div>
+            </div>  
+            <!-- Fin header version mobile-->    
+            <article>
+            	<!--Logo-->
+	            <img src="img_layout/logocarouselblanc.png" alt="Le Carousel" class="logo">
+	            <h1>Le Carousel</h1>
+	            <!--Phrase d'accroche-->
+	            <h2>Venez découvrir le délice d'une cuisine raffinée tout en aidant votre prochain.</h2>
+	            <!--CTA Réserver-->
+	            <a href="formulairereserv.html" target="_blank" class="bt">Réservez</a>
+	        </article>
+        </header>
+        <!--Section Concept-->
+
+        <!-- Slide cachée concept -->
+        <div id="mySidenavDt1" class="sidenavdt">
+            <!-- Bouton fermeture -->
+            <a href="javascript:void(0)" class="closebtndt" onclick="closeNav_dt1()"><img class="closedt" src="img_layout/croix.png" alt="&#10539;"/></a>  
+            <p>À Naples, une pratique bien connue est au coeur de la philosophie de vie des italiens: le café suspendu. Là bas, lorsqu'on commande un café, on demande un café suspendu en plus. On règle donc 2 cafés mais un seul sera consommé directement. Le second, le café suspendu, va dans un compteur disponible pour les personnes les plus défavorisées qui, lorsqu'elles le souhaitent, peuvent venir au café pour jouir de leur café suspendu gratuitement.</p>
+            <p>Notre établissement propose le même principe mais pour un menu entier. En effet, dans le prix de notre menu unique est déjà compris le prix du menu suspendu. En vous invitant à notre table vous offrez la possibilité à une personne dans le besoin de jouir d'un repas gratuit digne des plus grands restaurants.</p>
+            <p>L'efficacité de notre action repose sur la participation de bénévoles en cuisine ainsi que celle de grands Chefs qui créent un menu saisonier spécialement pour les clients du Carousel.</p>
+            <p>Dans notre établissement le goût de la plus fine cuisine se mêle au plaisir d'aider son prochain.</p>
+        </div>
+        <!-- Fin slide cachée -->
+        <!-- Brief concept -->
+        <section class="concept" id="section1">
+            <article class="clearfix">
+                <img src="img_layout/concept.png" alt="Concept">
+                <p>Le but de notre établissement est de proposer une cuisine goûteuse ainsi qu'un menu gratuit aux personnes dans le besoin grâce à votre générosité et celle de nos bénévoles.</p>
+                <span class="droitetxt" onclick="openNav_dt1()"><p>Cliquez pour en savoir plus sur notre initiative.</p></span>         
+            </article>
+            <!-- Flèche -->
+            <span class="droite" onclick="openNav_dt1()"> <img src="img_layout/gauche.png" class="flecheDroite" alt='&#10095;'/></span>
+        </section>
+        <!-- Fin section -->
+        <!-- Compteur-->
+        <div class="compteur">
+   			<div id="counterA" class="counter">0</div>
+			<div id="counterB" class="counter">0</div>
+			<div id="counterC" class="counter">0</div>			
+   		</div>
+   		 <div class="compteurtxt">
+   			<div>Menus suspendus distribués.</div>
+			<div>Grands Chefs à l'origine d'un menu.</div>
+			<div>Bénévoles passés dans nos cuisine.</div>			
+   		</div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img class="close" src="img_layout/croix.png" alt="&#10539;"/></a>
+            <!-- Slide menu cachée-->
+            <section>
+                <iframe width="100%" height="960px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="menu.html">
+                </iframe>
+            </section>
+        </div>
+        <!-- Section menu-->
+        <section class="menu" id="section2">
+            <article class="clearfix">
+                <img src="img_layout/menu.png" alt="Menu">
+                <p>Nous vous proposons des menus de saison préparés par des grands Chefs de la gastronomie française spécialement pour Le Carousel. À chaque saison son menu composé de produits actuels et goûteux.
+                </p>
+                <span class="gauche" onclick="openNav()"><p>Cliquez pour découvrir notre menu du moment.</p></span>
+            </article>
+            <span class="gauche" onclick="openNav()"> <img src="img_layout/droite.png" class="flecheGauche" alt='&#10095;'/></span>
+            </section>
+        <!-- Avis -->
+        <div class=quote>
+            <img src="img_layout/guill01.png" class="quote1">
+            <blockquote class="citation1">C'était super bon comme d'hab. Hâte d'être en été pour le menu spécial kébab ! - Pierre Robin.</blockquote>
+            <img src="img_layout/guill01.png" class="quote2">	
+           	<blockquote class="citation2">Top moumoute ! Je vous ramènerai des stickers Github la prochaine fois pour vous récompenser ! - Yann le Scouarnec.</blockquote>
+       	</div>
+        <!-- Slide chef cachée -->
+        <div id="mySidenavDt2" class="sidenavdt">
+            <a href="javascript:void(0)" class="closebtndt" onclick="closeNav_dt2()"><img class="closedt" src="img_layout/croix.png" alt="&#10539;"/></a>      
+            <p>Aujourd'hui Charlotte Homes aimerait donner accés à la gastronomie française aux plus démunis. Vous aussi vous pouvez faire partie notre équipe de cuisiniers bénévoles et rejoindre un temps la brigade grands chefs.</p>
+            <h2>Devenir chef</h2>
+            <p>Dans une ambiance conviviale vous serez placé sous les ordres du Chef cuisinier du moment. 
+            Vous serez en charge de tous types de travaux en cuisine: mise en place, réception et rangement des provisions, préparer les repas, préparer les garnitures, etc...</p>
+            <p>Vous êtes professionel de la restauration et souhaitez donner de votre temps pour offrir un repas exceptionnel aux plus démunis ? Rejoignez nous !</p>
+            <p><a href="formulaire.html">Formulaire</a></p>
+        </div>
+        <!-- Section chef -->
+        <section class="chef" id="section3">
+            <article class="clearfix">
+                <img src="img_layout/chef.png" alt="Chef">
+                <p> Notre Chef du moment, Charlotte Homes, est une passionnée autodidacte. Elle rejoint la brigade du chef cuisinier Alain Passard à L'Arpège à Paris en 2000, puis en 2005, elle ouvre son propre  restaurant gastronomique à Paris.</p>
+                <span class="droitetxt" onclick="openNav_dt()"><p>Le menu de la saison est d'ailleurs extrait de sa carte personelle.</p></span>            
+            </article>
+            <span class="droite" onclick="openNav_dt2()"> <img src="img_layout/gauche.png" class="flecheDroite" alt='&#10095;'/></span>
+        </section>
+        <!-- Bouton CTA -->
+        <a href="formulairereserv.html" target="_blank" class="bt">réservez</a>
+        <!-- Footer-->
+        <footer>
+			<div class="bloc1">
+				<article class="fournisseurs">
+					<h2>Informations complémentaires.</h2>
+					<p>Nous choisissons des fournisseurs qui partagent nos valeurs, telles que notre amour du goût, notre passion de découvrir et notre volonté de partage.
+					<br>Notre restaurant s'engage à servir à tous ses clients des produits frais et de saison.</p>
+				</article>
+				<article class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.03224614087!2d2.3295806130553665!3d48.86331808723899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbdf8dd47db957982!2sLe+Carrousel!5e0!3m2!1sfr!2sfr!4v1479299834596" width="757" height="295" frameborder="0" style="border:0" allowfullscreen></iframe></article>
+			</div>
+			<div class="footer clearfix">
+				<ul class="nav">
+					<li>Ouvert du mardi au dimanche</li>
+					<li>de 12h à 15h et de 19h à 22h30.</li>
+				</ul>
+				<ul class="social">
+					<li><a href="#"><img src="img_layout/iconfacebook.png"></a></li>
+					<li><a href="#"><img src="img_layout/icontwitter.png"></a></li>
+					<li><a href="#"><img src="img_layout/iconinstagram.png"></a></li>
+				</ul>
+				<div class="adresse">
+				<p>194 rue de Rivoli, 75001 Paris</p>
+				<p>01 23 45 67 89 - contact@lecarousel.fr</p>
+				</div>
+			</div>
+		</footer>
+    </div>
+    <!-- Script javascript-->
+    <script type="text/javascript" src="js/counter.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+</body>
+</html>
